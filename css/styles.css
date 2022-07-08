@@ -192,18 +192,35 @@ td {
 
 }
 
-.title_common{
+.title_common {
   color: gray;
 }
-.title_rare{
+.title_rare {
   color: green;
 }
-.title_epic{
+.title_epic {
   color: purple;
 }
-.title_legendary{
+.title_legendary {
   color: gold;
 }
-.title_mythic{
+.title_mythic {
   color: red;
+}
+
+.achiv {
+  border-style: solid;
+  border-color: black;
+  background-color: #797DB7;
+  height: 375px;
+  width: 375px;
+  border-radius: 25px;
+  padding: 15px;
+}
+.achiv img {
+  width: 250px;
+}
+.achiv:hover {
+  transform: scale(1.2);
+
 }
