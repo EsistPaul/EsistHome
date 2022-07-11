@@ -9,6 +9,9 @@ html {
   font-family: 'Roboto', sans-serif;
   background-color: #314668;
 }
+body {
+  padding-top: 50px;
+}
 p {
   color: #FBFAFB;
   font-size: larger;
@@ -20,17 +23,16 @@ li {
   color: #FBFAFB;
   font-size: medium;
 }
-a:visited{
+.link:visited {
   color: #797DB7;
 }
-a{
+link {
   color: #797DB7;
 }
 table.c tr td {
   padding: 10px;
   min-width: 100px;
   min-height: 75px;
-
 }
 table.c tr td:first-child {
   border-right-style: dotted;
@@ -40,6 +42,7 @@ table.c tr td:first-child {
 td {
   color: #FBFAFB;;
 }
+
 
 .container {
   min-height: 100vh;
@@ -143,55 +146,6 @@ td {
 }
 
 
-.header {
-  width: 100%;
-  height: 50px;
-  display: block;
-  background-color: #7BB0CF;
-}
-.inner_header {
-  width: 1000px;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
-}
-.logo_container {
-  height: 100%;
-  display: table;
-  float: left;
-}
-.logo_container h1 {
-  color: #FBFAFB;
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  font-weight: 800;
-}
-.logo_container h1 span {
-  color: #314668;
-}
-.navigation {
-  float: right;
-  height: 100%;
-}
-.navigation a {
-  height: 100%;
-  display: table;
-  float: left;
-  padding: 0px 20px;
-}
-.navigation a li {
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
-  color: #314668;
-  font-size: 20px;
-}
-.navigation a li:hover {
-  color: #FBFAFB;
-
-}
-
 .title_common {
   color: gray;
 }
@@ -207,6 +161,7 @@ td {
 .title_mythic {
   color: red;
 }
+
 
 .achiv {
   border-style: solid;
@@ -224,3 +179,56 @@ td {
   transform: scale(1.2);
 
 }
+
+
+header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #7BB0CF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0,1);
+  z-index: 1;
+}
+#logo {
+  transition: all 600ms;
+  -webkit-transition: all 600ms;
+  -moz-transition: all 600ms;
+  -o-transition: all 600ms;
+  width: 140px;
+  float: left;
+  margin: 10px 0px 0px 50px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #FBFAFB;
+}
+#logo:hover {
+  opacity: 0.5;
+}
+#logo span {
+  color: #314668;
+}
+header nav {
+  float: right;
+  margin: 10px 0 0 50px;
+}
+header nav ul li {
+  color: #314668;
+  float: left;
+  margin-right: 30px;
+}
+header nav ul li a {
+  transition: all 600ms; -webkit-transition: all 600ms; -moz-transition: all 600ms;-o-transition: all 600ms;
+  color: #314668;
+  font-size: 25px;
+  font-weight: bold;
+   
+}
+header nav ul li a:hover {
+  font-size: 25px;
+  font-weight: bold;
+  color: #FBFAFB;
+}
+
+li, #logo {  transition: all 600ms; -webkit-transition: all 600ms; -moz-transition: all 600ms;-o-transition: all 600ms; }
