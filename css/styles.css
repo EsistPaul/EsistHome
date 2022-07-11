@@ -192,10 +192,6 @@ header {
   z-index: 1;
 }
 #logo {
-  transition: all 600ms;
-  -webkit-transition: all 600ms;
-  -moz-transition: all 600ms;
-  -o-transition: all 600ms;
   width: 140px;
   float: left;
   margin: 10px 0px 0px 50px;
@@ -219,7 +215,6 @@ header nav ul li {
   margin-right: 30px;
 }
 header nav ul li a {
-  transition: all 600ms; -webkit-transition: all 600ms; -moz-transition: all 600ms;-o-transition: all 600ms;
   color: #314668;
   font-size: 25px;
   font-weight: bold;
@@ -230,5 +225,3 @@ header nav ul li a:hover {
   font-weight: bold;
   color: #FBFAFB;
 }
-
-li, #logo {  transition: all 600ms; -webkit-transition: all 600ms; -moz-transition: all 600ms;-o-transition: all 600ms; }
